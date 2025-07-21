@@ -24,4 +24,4 @@ RUN rm -rf 2119_gymso_fitness 2119_gymso_fitness.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
 # Expose HTTP port
-EXPOSE 80
+EXPOSE 80 443
