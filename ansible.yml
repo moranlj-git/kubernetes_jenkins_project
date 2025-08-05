@@ -2,8 +2,8 @@
   become: true
   tasks:
     - name: Create namespace for webapp
-      shell: KUBECONFIG=/home/ubuntu/.kube/config kubectl create namespace webapp-namespace || true
+      shell: KUBECONFIG=/home/azureuser/.kube/config kubectl create namespace webapp-namespace || true
     - name: Create new webapp deployment
-      shell: KUBECONFIG=/home/ubuntu/.kube/config kubectl apply -f /home/ubuntu/deployment.yml
+      shell: KUBECONFIG=/home/azureuser/.kube/config kubectl apply -f /home/ubuntu/deployment.yml
     - name: Create new webapp service
-      shell: KUBECONFIG=/home/ubuntu/.kube/config kubectl apply -f /home/ubuntu/service.yml
+      shell: KUBECONFIG=/home/azureuser/.kube/config kubectl apply -f /home/ubuntu/service.yml
