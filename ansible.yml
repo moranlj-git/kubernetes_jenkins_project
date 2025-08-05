@@ -4,6 +4,6 @@
     - name: Create namespace for webapp
       shell: KUBECONFIG=/home/azureuser/.kube/config kubectl create namespace webapp-namespace || true
     - name: Create new webapp deployment
-      shell: KUBECONFIG=/home/azureuser/.kube/config kubectl apply -f /home/ubuntu/deployment.yml
+      shell: KUBECONFIG=/home/azureuser/.kube/config kubectl apply -f /home/azureuser/deployment.yml
     - name: Create new webapp service
-      shell: KUBECONFIG=/home/azureuser/.kube/config kubectl apply -f /home/ubuntu/service.yml
+      shell: KUBECONFIG=/home/azureuser/.kube/config kubectl apply -f /home/azureuser/service.yml
